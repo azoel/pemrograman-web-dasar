@@ -1,154 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Form HTML</title>
-    </head>
-    <body>
-        <form method="post">
-            Dengan Account Yahoo!, dapatkan email gratis dan layanan web terkemuka lainnya.
-            <hr/>
-            <table border="0">
-                <tr>
-                    <td>
-                        <label for="nama">Nama Saya</label>
-                    </td>
-                    <td>
-                        <input type="text" name="nama" placeholder="Nama Depan" /> 
-                        <input type="text" nama="namaBelakang" placeholder="Nama Belakang" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="jenisKelamin">Jenis Kelamin</label>
-                    </td>
-                    <td>
-                        <select name="jenisKelamin">
-                            <option value="">-Pilih Satu-</option>
-                            <option value="L">Laki-Laki</option>
-                            <option value="P">Perempuan</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="tglLahir">Tanggal Lahir</label>
-                    </td>
-                    <td>
-                        <input type="text" name="tglLahir" placeholder="Tanggal Lahir" />
-                        <select name="bulanLahir">
-                            <option value="">-Pilih Bulan-</option>
-                            <option value="1">Januari</option>
-                            <option value="2">Februari</option>
-                            <option value="3">Maret</option>
-                            <option value="4">April</option>
-                            <option value="5">Mei</option>
-                            <option value="6">Juni</option>
-                            <option value="7">Juli</option>
-                            <option value="8">Agustus</option>
-                            <option value="9">September</option>
-                            <option value="10">Oktober</option>
-                            <option value="11">November</option>
-                            <option value="12">Desember</option>
-                        </select>
-                        <input type="text" name="tahunLahir" placeholder="Tahun Lahir" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="tingggal">Tinggal Di</label>
-                    </td>
-                    <td>
-                        <select name="tinggal">
-                            <option value="ID">Indonesia</option>
-                            <option value="-">Luar Indonesia</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-            <br/>
-            Pilih ID dan Kata Sandi
-            <hr/>
-            <table>
-                <tr>
-                    <td>
-                        <label for="id">ID Yahoo dan Email</label>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="username" /> @
-                        <select name="domain">
-                            <option value="yahoo.id">yahoo.id</option>
-                            <option value="yahoo.my">yahoo.my</option>
-                            <option value="yahoo.com">yahoo.com</option>
-                        </select>
-                        <button type="button">Periksa</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="sandi">Kata Sandi</label>
-                    </td>
-                    <td>
-                        <input type="password" name="sandi" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="sandi2">Ketik Ulang Kata Sandi</label>
-                    </td>
-                    <td>
-                        <input type="password" name="sandi2" />
-                    </td>
-                </tr>
-            </table>
-            <br/>
-            Jika Anda lupa kata sandi atau ID Anda
-            <hr/>
-            <table>
-                <tr>
-                    <td>
-                        <label for="rahasia1">Pertanyaan Rahasia 1</label>
-                    </td>
-                    <td>
-                        <select name="rahasia1">
-                            <option value="">-Pilih satu-</option>
-                            <option value="1">Siapa nama ayah saya</option>
-                            <option value="2">Nama panggilan saat kecil</option>
-                            <option value="3">Nama hewan peliharaan saya dulu</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="jawaban1">Jawaban Anda</label>
-                    </td>
-                    <td>
-                        <input type="text" name="jawaban1" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="rahasia2">Pertanyaan Rahasia 2</label>
-                    </td>
-                    <td>
-                        <select name="rahasia2">
-                            <option value="">-Pilih satu-</option>
-                            <option value="1">Siapa nama ayah saya</option>
-                            <option value="2">Nama panggilan saat kecil</option>
-                            <option value="3">Nama hewan peliharaan saya dulu</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="jawaban2">Jawaban Anda</label>
-                    </td>
-                    <td>
-                        <input type="text" name="jawaban2" />
-                    </td>
-                </tr>
-            </table>
-            <input type="submit" value="Kirimkan Data">
-            <button type="reset">Bersihkan Data</button>
-        </form>
-    </body>
+	<head>
+		<title>Form CSS</title>
+		<style>
+			input[type=text], select {
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			}
+ 
+			input[type=submit] {
+			  width: 100%;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 14px 20px;
+			  margin: 8px 0;
+			  border: none;
+			  border-radius: 4px;
+			  cursor: pointer;
+			}
+ 
+			input[type=submit]:hover {
+			  background-color: #45a049;
+			}
+			 
+			div {
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Membuat Form dengan HTML Dan CSS</h2>
+		<div>
+		  <form action="send.php">
+			<label for="fname">Nama Depan</label>
+			<input type="text" id="fname" name="firstname" placeholder="Nama Anda..">
+		 
+			<label for="lname">Nama Belakang</label>
+			<input type="text" id="lname" name="lastname" placeholder="Nama Belakang Anda..">
+		 
+			<label for="country">Provinsi</label>
+			<select id="country" name="country">
+			  <option value="jabar">Jawa Barat</option>
+			  <option value="jatim">Jawa Timur</option>
+			  <option value="jateng">Jawa Tengah</option>
+			</select>
+		 
+			<input type="submit" value="Kirim">
+		  </form>
+		</div> 
+	</body>
 </html>
